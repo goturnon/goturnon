@@ -1,7 +1,6 @@
 @media all and (max-width: 896px) {
   .parallax {
-     background-attachment: scroll;
-     height:0px;
+     display:none;
   }
 }
 
