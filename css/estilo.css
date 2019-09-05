@@ -1,6 +1,7 @@
 @media all and (max-width: 896px) {
   .parallax {
      background-attachment: scroll;
+     height:0px;
   }
 }
 
@@ -16,7 +17,7 @@ body{
 
 .parallax {
   background-image:url("../images/PARALAX.png");
-  height: 100px;
+  height: 300px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
