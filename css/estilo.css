@@ -20,6 +20,7 @@ body{
 @media only screen and (max-device-width: 1366px) {
   .parallax {
     background-attachment: scroll;
+    height:0%;
   }
 }
 #subirTopo {
