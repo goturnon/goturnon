@@ -17,6 +17,11 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
 }
+@media only screen and (max-device-width: 1366px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+}
 #subirTopo {
 text-decoration: none;
 background: rgba(255,191,68,.9);
