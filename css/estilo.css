@@ -10,18 +10,14 @@ body{
 
 .parallax {
   background-image:url("../images/PARALAX.png");
-  height: 100%; 
-
+  width: 100%;
+  max-width: 1920px;
+  position: relative;
+  min-height: 1000px; 
+  background-position: 50% 0;
   background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
-@media only screen and (min-width: 1366px) {
-   .parallax{
-	   background-attachment: fixed;
-	}
-}
+
 #subirTopo {
 text-decoration: none;
 background: rgba(255,191,68,.9);
