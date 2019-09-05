@@ -1,3 +1,9 @@
+@media all and (max-width: 896px) {
+  .parallax {
+     background-attachment: scroll;
+  }
+}
+
 * {box-sizing: border-box}
 html{
 	scroll-behavior: smooth;
