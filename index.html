@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="css/estilo.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script type="text/javascript">
+jQuery(document).ready(function(){
+
+jQuery("#subirTopo").hide();
+
+jQuery('a#subirTopo').click(function () {
+         jQuery('body,html').animate({
+           scrollTop: 0
+         }, 200);
+        return false;
+   });
+
+jQuery(window).scroll(function () {
+         if (jQuery(this).scrollTop() > 1000) {
+            jQuery('#subirTopo').fadeIn();
+         } else {
+            jQuery('#subirTopo').fadeOut();
+         }
+     });
+});
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 150, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+<script>
+function myFunction() {
+  var x = document.getElementById("menu");
+  if (x.className === "navbar") {
+    x.className += " responsive";
+  } else {
+    x.className = "navbar";
+  }
+}
+</script>
+<title>Site apresentação</title>
+</head>
+
+<body>
+	<nav class="navbar" id="menu">
+	<a class="active" href="#home">HOME</a> 
+    <a href="#sobre">QUEM SOMOS?</a> 
+    <a href="#porque">PORQUE COMUNICAR?</a> 
+    <a href="#como">COMO PODEMOS TE AJUDAR?</a>
+	<a href="#contato">CONTATO</a>
+	<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+	<i class="fa fa-bars"></i></a>
+	</nav>
+	
+<div id="home">
+<img src="images/P1.png" alt="goon" width="100%">
+</div>
+<div id="sobre" style="margin-top:-1.5%">
+<img src="images/P2.png" alt="goon" width="100%">
+</div>
+<div class="parallax" style="height: 300px">
+	
+</div>
+<div id="porque">
+<img src="images/P3.png" alt="goon" width="100%">
+</div>
+<div class="parallax" style="height: 200px">
+	
+</div>
+<div id="como">
+<img src="images/P4.png" alt="goon" width="100%">
+</div>
+<div class="parallax" style="height: 200px">
+	
+</div>
+<div id="contato">
+<img src="images/P5.png" alt="goon" width="100%">
+<a id="subirTopo">
+  <img src="images/icons8-seta-para-recolher-26.png" alt="seta"><br/>
+</a>
+</div>
+</body>
+</html>

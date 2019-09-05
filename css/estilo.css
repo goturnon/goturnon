@@ -1,0 +1,92 @@
+* {box-sizing: border-box}
+html{
+	scroll-behavior: smooth;
+}
+body{
+	margin: 0%;
+	width: 100%;
+	background-color: white;
+}
+
+.parallax {
+  background-image:url("../images/PARALAX.png");
+  height: 100%; 
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#subirTopo {
+text-decoration: none;
+background: rgba(255,191,68,.9);
+bottom: 2%;
+right: 2%;
+color: #000000;
+text-align: center;
+cursor: pointer;
+padding: 15px;
+font-size: 15px;
+font-weight: bold;
+text-transform: uppercase;
+position: fixed;
+border: 0;
+font-family: 'Lexend Deca', sans-serif;
+opacity: 0.8;
+}
+
+#subirTopo:hover {
+opacity:1;
+}
+.navbar {
+  width: 100%;
+  background-color: #FFDF44;
+  overflow: auto;
+  position: fixed;
+}
+
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: black;
+  text-decoration: none;
+  font-size: 14px;
+  width: 20%; /* Four links of equal widths */
+  text-align: center;
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+.navbar a:hover {
+  background-color: #FFDF44;
+}
+
+.navbar a.active {
+ 
+}
+.navbar .icon {
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  .navbar a:not(:first-child) {display: none;}
+  .navbar a.icon {
+    float: right;
+    display: block;
+  }
+}
+@media screen and (max-width: 600px) {
+  .navbar.responsive {position: relative;}
+  .navbar.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+#contato{
+	background-color: black;
+}
