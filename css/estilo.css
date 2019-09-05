@@ -1,4 +1,4 @@
-@media all and (max-width: 896px) {
+@media screen and (max-width: 896px) {
   .parallax {
      display:none;
   }
